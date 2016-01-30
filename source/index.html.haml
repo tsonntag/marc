@@ -1,10 +1,11 @@
 ---
 title: Orthopädische Praxis Eberhard
+page: home
 ---
 
 .row
   .col-xs-2
-    = image_tag 'images/marc.jpg'
+    = image_tag 'images/marc.jpg', class: 'img-marc'
   .col-xs-10
     .praxis-title
       Orthopädische Praxis
@@ -13,16 +14,18 @@ title: Orthopädische Praxis Eberhard
     .arzt-fuer
       Facharzt für Orthopädie &amp; Unfallchirurgie,
       Chirurgie, Sportmedizin, Notfallmedizin, Manuelle Medizin / Chirotherapie
+    .praxis-address
+      Europaplatz 8 - 53721 Siegburg - Telefon: 02241 / 63 55 8 - Fax: 02241 / 59 04 08
 
-
+- page = current_page.data["page"]
 
 .row
   .col-xs-2.praxis-links
-    .navbar-link.praxis-link= link_to "Startseite", "/"
-    .navbar-link.praxis-link= link_to "Leistungen", "leistungen"
-    .navbar-link.praxis-link= link_to "Anfahrt", "anfahrt"
-    .navbar-link.praxis-link= link_to "Fotos", "fotos"
+    .navbar-link.praxis-link= link_to "Startseite", "/", class: page == "home" ? "active" : ""
+    .navbar-link.praxis-link= link_to "Leistungen", "leistungen", class: page == "leistungen" ? "active" : ""
+    .navbar-link.praxis-link= link_to "Anfahrt", "anfahrt", class: page == "anfahrt" ? "active" : ""
+    .navbar-link.praxis-link= link_to "Fotos", "fotos", class: page == "fotos" ? "active" : ""
     .praxis-link
 
-  .col-xs-10
+  .col-xs-10.img-praxis
     = image_tag "images/praxis_aussen.png", class: 'img-praxis-aussen'
