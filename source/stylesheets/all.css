@@ -105,13 +105,32 @@ td {
     padding-right: 20px;
 }
 
+.leistung-header {
+    color: #65A058;
+    margin-top: 10px;
+}
+
+.leistung-item {
+    color: #65A058;
+}
 footer {
+    padding-top: 20px;
     float: right;
 }
 
 .impressum-link {
     color: #65A058;
     font-size: 12px;
+}
+
+.impressum-header {
+    padding-bottom: 10px;
+    color: #65A058;
+}
+
+.impressum-item {
+    padding-top: 10px;
+    color: #65A058;
 }
 
 .copyright {
