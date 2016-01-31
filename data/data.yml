@@ -1,24 +1,24 @@
 menu:
-  - page: Home
+  - page: Startseite
     url:  index.html
+  - page: Sprechzeiten
+    url: sprechzeiten.html
+  - page: Leistungen
+    url:  spektrum.html
+  - page: Rundgang
+    url:  rundgang.html
   - page: Anfahrt
     url:  anfahrt.html
-  - page: Leistungsspektrum
-    url:  spektrum.html
 
-carousel:
-  - images/1Beh.3.jpg 
-  - images/2Beh.2.1.jpg   
-  - images/Empfang3.jpg   
-  - images/Ro.jpg     
-  - images/1Beh.4.jpg   
-  - images/2Beh.3.jpg   
-  - images/Flur1.1.jpg    
+fotos:
+  - images/Empfang3.jpg
+  - images/FlurEingang2.jpg
   - images/Wartezimmer1.jpg
-  - images/1Beh.5.jpg   
-  - images/Beh.1.jpg    
-  - images/Flur2.1.jpg    
-  - images/2.1. Beh.4.jpg   
-  - images/Empfang1.jpg   
-  - images/FlurEingang2.jpg   
-
+  - images/1Beh.3.jpg
+  - images/2Beh.2.1.jpg
+  - images/Ro.jpg
+  - images/1Beh.4.jpg
+  - images/1Beh.5.jpg
+  - images/Beh.1.jpg
+  - images/2.1. Beh.4.jpg
+  - images/Empfang1.jpg

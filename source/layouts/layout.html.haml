@@ -42,14 +42,19 @@
             Orthopädische Praxis
           .praxis-subtitle
             Marc Eberhard
-          = yield_content :title
+          /= yield_content :title
+          .arzt-fuer
+            Facharzt für Orthopädie &amp; Unfallchirurgie,
+            Chirurgie, Sportmedizin, Notfallmedizin, Manuelle Medizin / Chirotherapie
+          .praxis-address
+            Europaplatz 8 - 53721 Siegburg - Telefon: 02241 / 63 55 8 - Fax: 02241 / 59 04 08
+
       .row
         .col-xs-2.praxis-links
-          .navbar-link.praxis-link= link_to "Startseite", "/", class: page == "home" ? "active" : ""
-          .navbar-link.praxis-link= link_to "Praxis", "praxis.html", class: page == "praxis" ? "active" : ""
-          .navbar-link.praxis-link= link_to "Leistungen", "leistungen.html", class: page == "leistungen" ? "active" : ""
-          .navbar-link.praxis-link= link_to "Anfahrt", "anfahrt.html", class: page == "anfahrt" ? "active" : ""
-          /.navbar-link.praxis-link= link_to "Fotos", "fotos", class: page == "fotos" ? "active" : ""
+          - data.data.menu.each_with_index do |item, i|
+            = current_page.data
+            - page = item["page"]
+            .navbar-link.praxis-link= link_to page, item["url"], class: current_page.data.page == page ? "active" : ""
           .praxis-link
 
         .col-xs-10.praxis-body

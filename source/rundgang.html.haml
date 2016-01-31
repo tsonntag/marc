@@ -1,0 +1,17 @@
+.col-xs-12.img-foto-div
+  #fotos.carousel.slide{ "data-ride" => "carousel"}
+    / slides
+    .carousel-inner{role: "listbox"}
+      - data.data.fotos.each_with_index do |img, i|
+        %div{class: "item #{i==0 ? "active" : ""}"}
+          = image_tag img, class: "img-foto-img"
+    / indicators
+    %a.left.carousel-control{:href => "#fotos", :role => "botton", "data-slide"=>"prev"}
+      %span.glyphicon.glyphicon-chevron-left{"area-hidden" => "true"}
+
+    %a.right.carousel-control{:href => "#fotos", :role => "botton", "data-slide"=>"next"}
+      %span.glyphicon.glyphicon-chevron-right{"area-hidden" => "true"}
+    / indicators
+    %ol.carousel-indicators
+      - (0...data.data.fotos.count).each do |i|
+        %li{"data-target" => "#fotos", "data-slide-to" => i, "class" => i == 0 ? "active" : ""}

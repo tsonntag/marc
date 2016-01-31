@@ -93,8 +93,18 @@ body {
 
 .img-foto-div {
     padding-left: 0;
-    width: 300px;
+    width: 680px;
+    height: 400px;
     overflow: hidden;
+}
+
+.img-foto-img {
+    height: 400px;
+    margin-top: -20px;
+}
+
+#fotos {
+    height: 400px;
 }
 
 td {
