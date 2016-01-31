@@ -7,12 +7,19 @@ body {
     color: #606060;
 }
 
+.container.main {
+    width: 900px;
+}
 
 .img-marc {
     width: 100px;
 }
 .praxis-links {
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.praxis-body {
+    padding-top: 20px;
 }
 
 .praxis-link {
@@ -30,6 +37,11 @@ body {
     color: #65A058;
     text-decoration: none;
 }
+
+.praxis-body {
+    padding-top: 20px;
+}
+
 .praxis-links a {
     padding-top: 20px;
     color: #606060;
@@ -68,16 +80,27 @@ body {
 }
 
 .img-praxis {
-    width: 800px;
-    height: 450px;
+    width: 680px;
+    /*height: 350px;*/
     overflow: hidden;
 }
 
-.img-praxis-aussen {
+.img-praxis-img {
     padding-top: 10px;
-    width: 800px;
-    margin: -35px 0 0 0px ;
+    width: 750px;
+    margin: -20px 0 0 -50px;
 }
+
+.img-foto-div {
+    padding-left: 0;
+    width: 300px;
+    overflow: hidden;
+}
+
+td {
+    padding-right: 20px;
+}
+
 
 .footer {
     align: right;

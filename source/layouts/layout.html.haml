@@ -10,7 +10,7 @@
 
     %link{href: "favicon.ico", rel: "icon"}
 
-    %title= current_page.data.title
+    %title Orthopädische Praxis Eberhard
 
   = stylesheet_link_tag "stylesheets/bootstrap.min.css"
   = stylesheet_link_tag "stylesheets/all.css"
@@ -29,11 +29,31 @@
   /[if lt IE 9]
     %script{src: "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"}
     %script{src: "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}
+
+  - page = current_page.data["page"]
+
   %body
-    .container
+    .container.main
+      .row
+        .col-xs-2
+          = image_tag 'images/marc.jpg', class: 'img-marc'
+        .col-xs-10
+          .praxis-title
+            Orthopädische Praxis
+          .praxis-subtitle
+            Marc Eberhard
+          = yield_content :title
+      .row
+        .col-xs-2.praxis-links
+          .navbar-link.praxis-link= link_to "Startseite", "/", class: page == "home" ? "active" : ""
+          .navbar-link.praxis-link= link_to "Praxis", "praxis.html", class: page == "praxis" ? "active" : ""
+          .navbar-link.praxis-link= link_to "Leistungen", "leistungen.html", class: page == "leistungen" ? "active" : ""
+          .navbar-link.praxis-link= link_to "Anfahrt", "anfahrt.html", class: page == "anfahrt" ? "active" : ""
+          /.navbar-link.praxis-link= link_to "Fotos", "fotos", class: page == "fotos" ? "active" : ""
+          .praxis-link
 
-      = yield
-
+        .col-xs-10.praxis-body
+          = yield_content :body
       .row
         .footer
           © 2015 Thomas Sonntag
