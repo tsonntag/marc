@@ -42,7 +42,6 @@
             Orthopädische Praxis
           .praxis-subtitle
             Marc Eberhard
-          /= yield_content :title
           .arzt-fuer
             Facharzt für Orthopädie &amp; Unfallchirurgie,
             Chirurgie, Sportmedizin, Notfallmedizin, Manuelle Medizin / Chirotherapie
@@ -52,15 +51,18 @@
       .row
         .col-xs-2.praxis-links
           - data.data.menu.each_with_index do |item, i|
-            = current_page.data
             - page = item["page"]
             .navbar-link.praxis-link= link_to page, item["url"], class: current_page.data.page == page ? "active" : ""
           .praxis-link
 
         .col-xs-10.praxis-body
-          = yield_content :body
-      .row
-        .footer
+          = yield
+
+      %footer
+        = link_to "Impressum", "impressum.html", class: "impressum-link"
+        %br
+        %br
+        .copyright
           © 2015 Thomas Sonntag
 
   / IE10 viewport hack for Surface/desktop Windows 8 bug

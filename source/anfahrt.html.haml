@@ -1,14 +1,26 @@
 ---
-page: home
+page: Anfahrt
 ---
 
-- content_for :title do
-  .arzt-fuer
-    Facharzt für Orthopädie &amp; Unfallchirurgie,
-    Chirurgie, Sportmedizin, Notfallmedizin, Manuelle Medizin / Chirotherapie
-  .praxis-address
-    Europaplatz 8 - 53721 Siegburg - Telefon: 02241 / 63 55 8 - Fax: 02241 / 59 04 08
+.col-xs-5{style: "padding-left: 0"}
+  = image_tag "images/europaplatz.jpg", style: "padding-top: 10px; width: 280px;"
 
-- content_for :body do
-  .img-praxis
-    = image_tag "images/praxis_aussen.png", class: 'img-praxis-aussen'
+.col-xs-7
+  %p{style: "padding-top: 10px"}
+    Unsere Orthopädische Praxis liegt im Verkehrszentrum von Siegburg, direkt gegenüber vom ICE-Bahnhof am Europaplatz.
+
+  %p
+    Der Bahnhof wird von U- / S- und Bundesbahn sowie vielen Bussen direkt angefahren.
+
+  %p
+    Für die Anfahrt mit dem Pkw stehen gleich mehrere Parkplätze und -häuser in unmittelbarer Umgebung zur Auswahl.
+
+  %p
+    Ein ebenerdiger Eingang sowie ein Aufzug gewährleisten den behindertengerechten Zugang zur Praxis.
+
+
+
+%iframe{:style => "padding-top: 20px", :frameborder => "0", :scrolling =>"no",
+        :marginheight =>"o",  :marginwidth =>"0",
+        :width => "700", :height =>"440",
+        :src =>"https://maps.google.com/maps?hl=de&q=Orthopädische Praxis Eberhard Siegburg&ie=UTF8&t=m&z=10&iwloc=B&output=embed"}

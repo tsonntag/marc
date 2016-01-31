@@ -2,7 +2,6 @@
 
 body {
     padding-top: 80px;
-    //background: #d4d4d4 url("../images/background.png");
     font-family: Helvetica,  Arial, sans-serif;
     color: #606060;
 }
@@ -14,23 +13,23 @@ body {
 .img-marc {
     width: 100px;
 }
-.praxis-links {
-    padding-top: 20px;
-}
 
 .praxis-body {
     padding-top: 20px;
 }
 
+.praxis-links {
+    padding-top: 20px;
+}
+
+
 .praxis-link {
     padding: 10px 0 10px 0;
     border-top: 1px solid #AECEA6;
-
 }
 
 .praxis-link .active {
     color: #65A058;
-
 }
 
 .praxis-link :hover {
@@ -38,8 +37,8 @@ body {
     text-decoration: none;
 }
 
-.praxis-body {
-    padding-top: 20px;
+.praxis-links {
+    margin-top: 10px;
 }
 
 .praxis-links a {
@@ -59,7 +58,6 @@ body {
 .praxis-subtitle {
     padding-top: 10px;
     letter-spacing: -1px;
-
     font-size: 20px;
     letter-spacing: 2px;
     font-variant: small-caps;
@@ -74,24 +72,24 @@ body {
 .arzt-fuer {
     padding-top: 10px;
     padding-bottom: 10px;
-
     letter-spacing: 1px;
     font-size: 18px;
 }
 
-.img-praxis {
+.img-aussen {
+    padding-top: 10px;
     width: 680px;
-    /*height: 350px;*/
     overflow: hidden;
 }
 
-.img-praxis-img {
+.img-aussen-img-off {
     padding-top: 10px;
     width: 750px;
     margin: -20px 0 0 -50px;
 }
 
-.img-foto-div {
+.rundgang {
+    padding-top: 10px;
     padding-left: 0;
     width: 680px;
     height: 400px;
@@ -103,15 +101,19 @@ body {
     margin-top: -20px;
 }
 
-#fotos {
-    height: 400px;
-}
-
 td {
     padding-right: 20px;
 }
 
+footer {
+    float: right;
+}
 
-.footer {
-    align: right;
+.impressum-link {
+    color: #65A058;
+    font-size: 12px;
+}
+
+.copyright {
+    font-size: 8px;
 }
