@@ -9,6 +9,10 @@ menu:
     url:  rundgang.html
   - page: Anfahrt
     url:  anfahrt.html
+  - page: Impressum
+    url:  impressum.html
+  - page: Datenschutz
+    url:  datenschutz.html
 
 fotos:
   - images/201710/TresenRechts.JPG
